@@ -1,0 +1,157 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header .second {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+.slideshow-container {
+    max-width: 800px;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.quantity-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity-selector button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.quantity-selector .quantity {
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+.add-to-cart {
+    display: block;
+    width: 100%;
+    background-color: #ff4500;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.heart {
+    text-align: center;
+    font-size: 2em;
+    color: #ff4500;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.total-price {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.total {
+    font-weight: bold;
+    color: #ff4500;
+}
+
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+.fade {
+    animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 600px) {
+    .text {
+        font-size: 1em;
+    }
+
+    .add-to-cart {
+        font-size: 1em;
+    }
+
+    .quantity-selector button {
+        padding: 8px;
+    }
+
+    .quantity-selector .quantity {
+        font-size: 1em;
+    }
+
+    .total-price {
+        font-size: 1.2em;
+    }
+}
